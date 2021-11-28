@@ -75,11 +75,12 @@ except NameError:
 #Change above line to:
 #    d += (x[0] == y[0] or y[0] == "*" or (y[0][0] == "%" and str(x[0]).isdigit() and (int(x[0]) % int(y[0][1:])) == 0))
 
-if os.path.isfile("/etc/p0f/p0f.fp") or os.path.exists("/opt/local/share/p0f/p0f.fp") or os.path.exists("/usr/share/p0f/p0f.fp"):
-	load_module("p0f")
-else:
-	sys.stderr.write("/etc/p0f/p0f.fp not found; please install p0f version 2 to enable OS fingerprinting.\n")
-	sys.stderr.flush
+if os.name != "nt":
+    if os.path.isfile("/etc/p0f/p0f.fp") or os.path.exists("/opt/local/share/p0f/p0f.fp") or os.path.exists("/usr/share/p0f/p0f.fp"):
+	    load_module("p0f")
+    else:
+	    sys.stderr.write("/etc/p0f/p0f.fp not found; please install p0f version 2 to enable OS fingerprinting.\n")
+	    sys.stderr.flush
 
 
 
