@@ -54,6 +54,7 @@ echo 'noenum = [ Resolve(), TCP_SERVICES, UDP_SERVICES ]' >> ~/.scapy_startup.py
 
 ### Windows
 To install scapy, see the [installation guide](https://scapy.readthedocs.io/en/latest/installation.html#windows).
+
 To install npcap, use the Windows installer available at [nmap.org](https://nmap.org/npcap/).
 ***
 **NOTE**
@@ -62,7 +63,7 @@ While installing npcap, you will be given the option of installing with "Admin o
 
 ```powershell
 # Install python dependencies
-sudo pip install -r requirements.txt
+pip install -r requirements.txt
 # Prevent Scapy from performing DNS lookups
 echo 'noenum = [ Resolve(), TCP_SERVICES, UDP_SERVICES ]' >> ~/.scapy_startup.py
 ```
