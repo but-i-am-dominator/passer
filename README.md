@@ -65,7 +65,7 @@ While installing npcap, you will be given the option of installing with "Admin o
 # Install python dependencies
 pip install -r requirements.txt
 # Prevent Scapy from performing DNS lookups
-echo 'noenum = [ Resolve(), TCP_SERVICES, UDP_SERVICES ]' >> ~/.scapy_startup.py
+echo 'noenum = [ Resolve(), TCP_SERVICES, UDP_SERVICES ]' >> ~\.scapy_startup.py
 ```
 
 ### Docker
