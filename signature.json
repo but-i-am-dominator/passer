@@ -1,7 +1,12 @@
 {
     "signature_list": [
         {
-            "name": "Debian 10",
+            "version": 
+                {
+                    "name": "Debian 10",
+                    "rev": "0.1",
+                    "date": "20211201"
+                },
             "os": 
                 {
                         "name": "Debian",
@@ -21,20 +26,15 @@
                     {
                         "acid": "0:1",
                         "tcp_flag": "SYN",
-                        "tcp_sig": "ver:ittl:olen:mss:wsize,scale:olayout:quirks:pclass"
+                        "tcp_sig": "ver:ittl:olen:mss:wsize,scale:olayout:quirks:pclass",
+                        "comments": ""
                     }
                 ],
-            "comments": "",
             "author":
                 {
                     "name": "David Quartarolo",
-                    "email": "david@activecountermeasures",
+                    "email": "david@activecountermeasures.com",
                     "github": "but-i-am-dominator"
-                },
-            "version": 
-                {
-                    "rev": "0.1",
-                    "date": "20211201"
                 }
         }
     ]
