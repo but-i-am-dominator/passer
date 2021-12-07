@@ -1,0 +1,41 @@
+{
+    "signature_list": [
+        {
+            "name": "Debian 10",
+            "os": 
+                {
+                        "name": "Debian",
+                        "version": "10.8",
+                        "class": "linux",
+                        "vendor": "Debian",
+                        "url": "https://debian.org"
+                },
+            "device": 
+                {
+                        "type": "Virtual",
+                        "vendor": "VMware",
+                        "url": "https://vmware.com"
+                },
+            "signatures":
+                [
+                    {
+                        "acid": "0:1",
+                        "tcp_flag": "SYN",
+                        "tcp_sig": "ver:ittl:olen:mss:wsize,scale:olayout:quirks:pclass"
+                    }
+                ],
+            "comments": "",
+            "author":
+                {
+                    "name": "David Quartarolo",
+                    "email": "david@activecountermeasures",
+                    "github": "but-i-am-dominator"
+                },
+            "version": 
+                {
+                    "rev": "0.1",
+                    "date": "20211201"
+                }
+        }
+    ]
+}
